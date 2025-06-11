@@ -1,0 +1,580 @@
+@font-face {
+  font-family: "main";
+  src: url(./font/KellySlab-Regular.ttf);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  place-items: center end;
+
+}
+
+header {
+  width: 95%;
+  height: 10%;
+  background-color: #363437;
+  margin: 2%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 8px 12px black;
+}
+
+main {
+  width: 100%;
+  flex: 1 1 auto;
+  background-color: #363437;
+  font-family: 'main';
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  margin-left: 15px;
+  height: 100%
+}
+
+.button_items {
+  background-color: #6E6E6E;
+  width: 155px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-family: main;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+
+.button_items:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px black;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 15px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+.LabelPCR {
+  width: 40vh;
+  position: absolute;
+  z-index: 1;
+  right: 3%;
+  top: 25%;
+}
+
+section h2 {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.filtr_item {
+  background-color: #6E6E6E;
+  padding: 5px 15px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  font-family: main;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+
+.filtr_item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px black;
+}
+
+.filtr_price {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  background-color: #6E6E6E;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.second_filtr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.secsearch {
+  display: flex;
+  justify-content: center;
+}
+
+.search_panel {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.search_panel input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.icon svg {
+  display: block;
+  stroke: #333;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.imgicon {
+
+  margin-bottom: -20px;
+}
+
+.allcars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.row-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.row-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+.allcarsitems {
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.allcarsitems:hover {
+  transform: translateY(-10px);
+}
+
+.allcarsitems img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.car-title {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-shadow: none;
+}
+
+.car-price {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #939393;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 40px;
+}
+
+.Uslugi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.Uslugi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.UslugiCar img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.UslugiCar:hover {
+  transform: translateY(-12px);
+}
+
+
+.car-title {
+  font-size: 24px;
+}
+
+body {
+  font-family: 'main';
+  color: white;
+}
+
+.allcars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.row-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.row-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+}
+
+.Uslugi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.UslugiCar img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.car-title {
+  font-size: 24px;
+}
+
+.car-price {
+  font-size: 14px;
+  color: #939393;
+}
+
+footer {
+  width: 100%;
+  background-color: #363437;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .filtr_item {
+    margin-top: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .row-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Uslugi {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .car-title {
+    font-size: 20px;
+  }
+
+  .car-price {
+    font-size: 13px;
+  }
+
+  .UslugiCar img {
+    width: 90%;
+  }
+
+  .imgfooter img {
+    width: 75px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .burger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .row-top {
+    grid-template-columns: 1fr;
+  }
+
+  .row-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .Uslugi {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .car-title {
+    font-size: 18px;
+  }
+
+  .car-price {
+    font-size: 12px;
+  }
+
+  .UslugiCar img {
+    width: 80%;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .imgfooter img {
+    width: 55px;
+
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.imgfooter {
+
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+.burger2{
+  background: none;
+  border: none;
+}
+.mobile-menu {
+  position: fixed;
+  top: 12%;
+  right: -750px;
+  width: 200px;
+  height: 120px;
+  background-color: #363437;
+  color: white;
+  transition: right 0.3s ease;
+  box-shadow: 0 4px 12px black;
+  padding: 20px;
+  z-index: 200;
+  border-radius: 10px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.login {
+  background-color: #2d2d2d;
+  color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  font-family: main;
+}
+
+.login h2 {
+  margin-top: 0;
+}
+
+.login label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #6E6E6E;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #8e8e8e;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: white;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-window {
+  background-color: #222;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 350px;
+  max-height: 70vh;
+  overflow-y: auto;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 15px #000;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px; right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.brands-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.brands-list li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background: #444;
+  border-radius: 4px;
+  cursor: default;
+  transition: background-color 0.3s;
+}
+
+.brands-list li:hover {
+  background-color: #666;
+}
